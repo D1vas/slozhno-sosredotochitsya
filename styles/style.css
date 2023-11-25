@@ -3,3 +3,77 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--secondary-color, #ff0070);
+  border-block-start: 1px solid var(--secondary-color, #ff0070);
+  inset-inline-end: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  inset-block-start: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--secondary-color, #ff0070);
+  border-block-end: 1px solid var(--secondary-color, #ff0070);
+  inset-inline-start: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.rec_element {
+  position: absolute;
+  color: #ff0070;
+  text-align: center;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  top: 20px;
+  right: 30px;
+  z-index: -1;
+}
+
+.rec_element::before {
+  content: "REC";
+  color: var(--accent-color, #ff0070);
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+.rec_element::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  background: var(--accent-color, #ff0070);
+  inline-size: 9px;
+  block-size: 10px;
+}
+
+.page_title {
+  color: #db00ff;
+  text-shadow: 4px 4px 0px #ff0070;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header_title {
+  background-color: #FF0070;
+  color: #000028;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
