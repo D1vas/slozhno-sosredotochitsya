@@ -1,7 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family:"IBM Plex mono", monospace ;
+  background-color: #000028;
+  background-image: url("../images/cover-image.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .decorated-zone::before,
@@ -16,15 +20,24 @@
 .decorated-zone::before {
   border-inline-end: 1px solid var(--secondary-color, #ff0070);
   border-block-start: 1px solid var(--secondary-color, #ff0070);
-  inset-inline-end: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  inset-block-start: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::after {
   border-inline-start: 1px solid var(--secondary-color, #ff0070);
   border-block-end: 1px solid var(--secondary-color, #ff0070);
-  inset-inline-start: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.cover {
+  display: grid;
+}
+
+.header {
+  align-items: start;
+  
 }
 
 .rec_element {
@@ -76,4 +89,46 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+  max-width: 491px;
+  min-height: 71px;
+  justify-self: end;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: 2px 12px;
+  color: var(--secondary-color, #ff0070);
+  line-height: 18px;
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  border-color: currentColor;
+  cursor: default;
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--secondary-color-o-40, #ff007040);
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: currentColor;
 }
