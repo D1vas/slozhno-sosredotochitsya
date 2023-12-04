@@ -9,11 +9,11 @@
   --page-background-image: url("../images/cover-image-light.png");
 
   --page-title-color: var(--color-pink-3, #ffc2e6);
-  --accent-color: var(--color-black-2, #353430);
+  --general-color: var(--color-black-2, #353430);
   --title-decor: var(--pink-color-2, #ff8dcb);
   --title-text: var(--color-black-2, #353430);
   --shadow-color: var(--pink-color-2, #ff8dcb);
-  --secondary-color: var(--color-black-2, #353430);
+  --border-color: var(--color-black-2, #353430);
 
   --hover-color: var(--color-black-3, #35343040);
 

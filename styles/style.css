@@ -52,15 +52,15 @@
 }
 
 .decorated-zone::before {
-  border-inline-end: 1px solid var(--secondary-color, #ff0070);
-  border-block-start: 1px solid var(--secondary-color, #ff0070);
+  border-inline-end: 1px solid var(--border-color, #ff0070);
+  border-block-start: 1px solid var(--border-color, #ff0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--secondary-color, #ff0070);
-  border-block-end: 1px solid var(--secondary-color, #ff0070);
+  border-inline-start: 1px solid var(--border-color, #ff0070);
+  border-block-end: 1px solid var(--border-color, #ff0070);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -70,12 +70,12 @@
 
 .header {
   align-items: start;
-  min-height: 769px;
+  min-height: 768px;
 }
 
 .rec_element {
   position: absolute;
-  color: var(--accent-color, #ff0070);
+  color: var(--general-color, #ff0070);
   text-align: center;
   font-family: var(--page-font-family, "IBM Plex Mono", sans-serif);
   font-size: 18px;
@@ -90,7 +90,7 @@
 
 .rec_element::before {
   content: "REC";
-  color: var(--accent-color, #ff0070);
+  color: var(--general-color, #ff0070);
   line-height: 24px;
   margin-right: 10px;
 }
@@ -99,8 +99,8 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
-  background: var(--accent-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--general-color, #ff0070);
+  background: var(--general-color, #ff0070);
   inline-size: 9px;
   block-size: 10px;
 }
@@ -141,8 +141,8 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 2px 12px;
-  color: var(--accent-color, #ff0070);
+  padding: 3px 12px;
+  color: var(--general-color, #ff0070);
   line-height: 18px;
   text-transform: lowercase;
   background: transparent;
@@ -178,12 +178,14 @@
   padding: 60px 0px;
 }
 .section {
-  display: flex;
+  display: grid;
   padding: 0px 20px;
+  gap: 10px;
+  grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
 }
 
 .title {
-  color: var(--accent-color, #ff0070);
+  color: var(--general-color, #ff0070);
   font-family: var(--page-font-family, "IBM Plex Mono", sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -208,7 +210,7 @@
 
 .title-decor {
   color: #000028;
-  background-color: var(--title-decor);
+  background-color: var(--title-decor,#FF0070);
   font-family: var(--page-font-family, "IBM Plex Mono", sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -303,3 +305,47 @@
 }
 
 /*конец footer*/
+
+
+
+@media (width <= 768px) {
+ .header {
+  min-width: 768px;
+  min-height: 1024px;
+ }
+
+ .section-what {
+  max-width: 768px;
+  max-height: none;
+  flex-direction: column;
+ }
+
+ .header__theme-menu-list {
+  margin-top: 170px;
+  flex-direction: column;
+ }
+
+ .articles-list-what {
+  flex-direction: column;
+ }
+
+ .article_what{
+  max-width: none;
+ }
+
+ .header__theme-menu {
+  justify-self: end;
+}
+
+.header_title {
+  inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+}
+
+.page_title {
+  margin-top: 0px;
+}
+
+.articles-list {
+  margin-left: 10px;
+}
+}
