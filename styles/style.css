@@ -28,12 +28,10 @@
 
 .link {
   text-decoration: none;
-
 }
 
 .link:hover {
   text-decoration: underline;
-  
 }
 
 /*начало decorated-zone*/
@@ -210,7 +208,7 @@
 
 .title-decor {
   color: #000028;
-  background-color: var(--title-decor,#FF0070);
+  background-color: var(--title-decor, #ff0070);
   font-family: var(--page-font-family, "IBM Plex Mono", sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -229,7 +227,8 @@
 }
 
 .section-what {
-  display: inline-block;
+
+  display: grid;
   width: 1024px;
   max-height: 498px;
   padding: 0px 20px;
@@ -292,7 +291,6 @@
 
 .footer {
   place-items: center;
-  min-height: 768px;
 }
 
 .footer_title {
@@ -306,46 +304,48 @@
 
 /*конец footer*/
 
-
-
 @media (width <= 768px) {
- .header {
-  min-width: 768px;
-  min-height: 1024px;
- }
+  .header {
+    min-width: 768px;
+    min-height: 1024px;
+  }
 
- .section-what {
-  max-width: 768px;
-  max-height: none;
-  flex-direction: column;
- }
+  .section-what {
+    max-width: 768px;
+    max-height: none;
+  }
 
- .header__theme-menu-list {
-  margin-top: 170px;
-  flex-direction: column;
- }
+  .header__theme-menu-list {
+    margin-top: 170px;
+    flex-direction: column;
+  }
 
- .articles-list-what {
-  flex-direction: column;
- }
+  .articles-list-what {
+    flex-direction: column;
+  }
 
- .article_what{
-  max-width: none;
- }
+  .article_what {
+    max-width: none;
+  }
 
- .header__theme-menu {
-  justify-self: end;
+  .header__theme-menu {
+    justify-self: end;
+  }
+
+  .header_title {
+    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+  }
+
+  .page_title {
+    margin-top: 10px;
+  }
+
+  .articles-list {
+    margin-left: 10px;
+  }
+
+  .title_main {
+    max-width: 236px;
 }
 
-.header_title {
-  inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-}
-
-.page_title {
-  margin-top: 0px;
-}
-
-.articles-list {
-  margin-left: 10px;
-}
 }
