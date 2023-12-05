@@ -19,3 +19,21 @@
 
   --rec-visibility: hidden;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-background-color: var(--pink-color-1, #fff1f7);
+    --page-background-image: url("../images/cover-image-light.png");
+
+    --page-title-color: var(--color-pink-3, #ffc2e6);
+    --general-color: var(--color-black-2, #353430);
+    --title-decor: var(--pink-color-2, #ff8dcb);
+    --title-text: var(--color-black-2, #353430);
+    --shadow-color: var(--pink-color-2, #ff8dcb);
+    --border-color: var(--color-black-2, #353430);
+
+    --hover-color: var(--color-black-3, #35343040);
+
+    --rec-visibility: hidden;
+  }
+}
