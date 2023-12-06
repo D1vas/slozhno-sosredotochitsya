@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: var(--page-font-family, "IBM Plex Mono", sans-serif);
   background-color: var(--page-background-color, --color-black-1, #000028);
@@ -101,6 +99,7 @@
   background: var(--general-color, #ff0070);
   inline-size: 9px;
   block-size: 10px;
+  animation: blink 1s infinite;
 }
 
 .page_title {
@@ -232,20 +231,11 @@
   align-items: center;
 }
 
-.article_what {
-  max-width: 315px;
-}
-
 .articles-list-what {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
-}
-
-.title-images {
-  /*
-  max-width: 984px;
-  */
 }
 
 .section_images {
@@ -302,14 +292,13 @@
 /*конец footer*/
 
 @media (width <= 768px) {
-
   .header__theme-menu-list {
     margin-top: 170px;
     flex-direction: column;
   }
 
   .articles-list-what {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .article_what {
@@ -334,13 +323,10 @@
 
   .title_main {
     max-width: 236px;
+  }
 }
-
-}
-
 
 @media (width <= 375px) {
-
   .header__theme-menu-list {
     margin-top: 65px;
   }
@@ -368,7 +354,7 @@
 
   .main {
     padding: 40px 0px;
-    gap: 50px
+    gap: 50px;
   }
 
   .articles-list {
@@ -379,25 +365,41 @@
     padding: 0px 10px;
   }
 
+  .articles-list-what {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .title_main {
     max-width: unset;
-}
+  }
 
-.section_images {
-  padding: 0px 10px;
-  gap: 10px;
-  
-}
+  .section_images {
+    padding: 0px 10px;
+    gap: 10px;
+  }
   .main-images-list {
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 
-  .main-images-item:first-child, .main-images-item:last-child {
-   grid-column-start: 1;
+  .main-images-item:first-child,
+  .main-images-item:last-child {
+    grid-column-start: 1;
   }
 
   .footer_title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

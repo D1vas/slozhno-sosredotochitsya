@@ -1,33 +1,28 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
-  --pink-color-1: #FFF1F7;
-  --pink-color-2:#FF8DCB;
-  --pink-color-3: #FFC2E6;
-  --pink-color-4: #FF0070;
+  --pink-color-1: #fff1f7;
+  --pink-color-2: #ff8dcb;
+  --pink-color-3: #ffc2e6;
+  --pink-color-4: #ff0070;
   --pink-color-5: #ff007040;
-  --pink-color-6:#f1b2ce;
+  --pink-color-6: #f1b2ce;
   --pink-color-7: #db00ff;
 
   --color-black-1: #000028;
   --color-black-2: #353430;
-  --color-black-3: #35343040; 
+  --color-black-3: #35343040;
 
-  --border-color: var(--pink-color-4, #FF0070);
+  --border-color: var(--pink-color-4, #ff0070);
   --hover-color: var(--pink-color-5, #ff007040);
-  --shadow-color: var(--pink-color-4, #FF0070);
-  --general-color: var(--pink-color-4, #FF0070);
+  --shadow-color: var(--pink-color-4, #ff0070);
+  --general-color: var(--pink-color-4, #ff0070);
 
-  --title-decor: var(--pink-color-4, #FF0070);
+  --title-decor: var(--pink-color-4, #ff0070);
   --title-text: var(--pink-color-6, #f1b2ce);
 
   --page-title-color: var(--pink-color-7, #db00ff);
-  --page-font-family: 'IBM Plex Mono', sans-serif;
+  --page-font-family: "IBM Plex Mono", sans-serif;
   --page-background-color: var(--color-black-1, #000028);
   --page-background-image: url("../images/cover-image-dark.png");
 
   --rec-visibility: visible;
 }
-
