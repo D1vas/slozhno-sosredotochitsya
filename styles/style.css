@@ -247,6 +247,8 @@
 
 .main-images-list {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .main-images-item-img {
@@ -255,11 +257,6 @@
   object-position: center;
   block-size: 100%;
   inline-size: 100%;
-}
-
-.main-images-list {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 
 .main-images-item:first-child,
