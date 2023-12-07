@@ -8,6 +8,7 @@
   --title-text: var(--pink-color-6, #f1b2ce);
   --shadow-color: var(--pink-color-4, #ff0070);
   --border-color: var(--pink-color-4, #ff0070);
+  --link-focus: var( --pink-color-6, #f1b2ce);
 
   --hover-color: var(--pink-color-5, #ff007040);
 
@@ -25,6 +26,7 @@
     --title-text: var(--pink-color-6, #f1b2ce);
     --shadow-color: var(--pink-color-4, #ff0070);
     --border-color: var(--pink-color-4, #ff0070);
+    --link-focus: var( --pink-color-6, #f1b2ce);
 
     --hover-color: var(--pink-color-5, #ff007040);
 
