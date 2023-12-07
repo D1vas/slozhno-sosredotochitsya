@@ -141,7 +141,7 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 3px 12px;
+  padding: 2px 13px;
   color: var(--general-color, #ff0070);
   line-height: 18px;
   text-transform: lowercase;
