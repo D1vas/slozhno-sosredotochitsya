@@ -104,7 +104,6 @@
   background: var(--general-color, #ff0070);
   inline-size: 9px;
   block-size: 10px;
-  animation: blink 1s infinite;
 }
 
 .page-title {
@@ -405,17 +404,5 @@
 
   .articles-list {
     margin-left: 0px;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
