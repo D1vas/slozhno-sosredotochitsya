@@ -8,6 +8,7 @@
   --title-text: var(--color-black-2, #353430);
   --shadow-color: var(--pink-color-2, #ff8dcb);
   --border-color: var(--color-black-2, #353430);
+  --link-focus: var(--color-black-2, #353430);
 
   --hover-color: var(--color-black-3, #35343040);
 
@@ -25,6 +26,7 @@
     --title-text: var(--color-black-2, #353430);
     --shadow-color: var(--pink-color-2, #ff8dcb);
     --border-color: var(--color-black-2, #353430);
+    --link-focus: var(--color-black-2, #353430);
 
     --hover-color: var(--color-black-3, #35343040);
 

@@ -15,6 +15,7 @@
   --hover-color: var(--pink-color-5, #ff007040);
   --shadow-color: var(--pink-color-4, #ff0070);
   --general-color: var(--pink-color-4, #ff0070);
+  --link-focus: var(--pink-color-6, #f1b2ce;);
 
   --title-decor: var(--pink-color-4, #ff0070);
   --title-text: var(--pink-color-6, #f1b2ce);
